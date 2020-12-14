@@ -1,0 +1,72 @@
+// Color Variables: Layout
+$body-bg: hsl(0, 0%, 5%);
+$btn-bg-color: hsl(0, 0%, 20%);
+$footer-bg-color: hsl(210, 15%, 7%);
+$navbar-bg-color: hsla(0, 0%, 0%, 85%);
+$purple-color: hsl(260, 50%, 50%);
+
+// CSS to be added
+
+/* ==============================
+Layout
+============================== */
+
+/* Layout SCSS Color Variables */
+:root {
+    background: $body-bg;
+    --light-bg-shadow: hsla(0, 0%, 0%, 50%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-attachment: fixed;
+    background-color: transparent !important;
+    background-position: center;
+    background-size: cover;
+}
+
+br {
+    line-height: .1rem;
+}
+
+/* Background Stuff */
+
+.bg-darker {
+    background: $color-cobalt-dark;
+}
+
+.bg-darkest {
+    background: $footer-bg-color;
+}
+
+.bg-purple {
+    background: $purple-color;
+}
+
+.recruitment-box {
+    background-image: url("/assets/images/bg_rcrtmnt_sml.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 3px 5px var(--light-bg-shadow);
+    height: 330px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+@media screen and (min-width: 576px) {
+    .recruitment-box {
+        background-image: url("/assets/images/bg_rcrtmnt.jpg");
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .borders-lg {
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+    }
+}

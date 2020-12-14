@@ -1,0 +1,60 @@
+// Colors: Multi-Use
+$color-cobalt-dark: hsl(210, 35%, 13%);
+$color-cobalt-medium: hsl(210, 65%, 50%);
+$color-cobalt-light: hsl(197, 65%, 55%);
+$color-codgray: hsl(0, 0%, 5%);
+$color-codgray-light: hsl(0, 0%, 10%);
+$color-concrete: hsl(0, 0%, 95%);
+$color-gray-ultradark: hsl(0, 0%, 10%);
+$color-silver: hsl(0, 0%, 80%);
+$color-white: white;
+
+// SCSS Modules
+@import 'layout';
+@import 'typography';
+@import 'bootstrap';
+@import 'buttons';
+@import 'images';
+@import 'video';
+@import 'scrollbar';
+@import 'progressbars';
+
+// CSS Output
+
+/* ==============================
+Custom Fonts
+============================== */
+@font-face {
+    font-family: 'Dev Gothic';
+    src: url('/fonts/devgothic.ttf');
+}
+@font-face {
+    font-family: 'Mechsuit';
+    src: url('/fonts/mechsuit.otf');
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/fonts/opensans.ttf');
+}
+@font-face {
+    font-family: 'Steelfish';
+    src: url('/fonts/steelfish.ttf');
+}
+
+/* ==============================
+Color Variables
+============================== */
+:root {
+    --navbar-bg-color: hsla(210, 35%, 10%, 80%);
+    --navlink-hover-color: hsla(197, 65%, 50%, 15%);
+    --navlink-hover-shadow-color: hsl(197, 65%, 55%);
+}
+
+/* ==============================
+Horizontal Rules
+============================== */
+.main-hor-rule {
+    background-color: transparent;
+    background-image: linear-gradient(to right, transparent, $color-cobalt-light, transparent);
+    height: 1px;
+}

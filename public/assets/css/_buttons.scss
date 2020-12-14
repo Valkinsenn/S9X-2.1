@@ -1,0 +1,228 @@
+// Color Variables: Buttons
+$body-text-color: hsl(0, 0%, 80%);
+$btn-bg-color: hsl(0, 0%, 20%);
+$header-text-color: hsl(0, 0%, 95%);
+$subheader-text-color: hsl(197, 65%, 55%);
+
+// Font Variables: Buttons
+$body-font: "Open Sans", sans-serif;
+$header-font: "Steelfish", sans-serif;
+$subheader-font: "Dev Gothic", sans-serif;
+
+// CSS to be added
+
+/* ==============================
+Buttons
+============================== */
+
+/* CSS Variables */
+:root {
+    --box-glow: hsla(197, 50%, 50%, 50%);
+    --light-shadow: hsla(0, 0%, 0%, 50%);
+}
+
+.inactive {
+    filter: brightness(0);
+}
+
+/* Multi-use Buttons */
+
+.btn {
+    font-family: $header-font;
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+}
+
+.btn-dark {
+    background-color: hsl(0, 0%, 25%);
+    background-image: linear-gradient(to top, #0d0d0d 0%, #262626 49%, transparent 51%, #262626 100%), linear-gradient(to right, hsl(0, 0%, 16%), transparent, hsl(0, 0%, 16%));
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 2px 5px var(--light-shadow);
+    font-size: 1.7rem;
+    overflow: hidden;
+    padding: 15px 20px;
+    position: relative;
+}
+
+.btn-dark:hover {
+    background-color: hsl(0, 0%, 35%);
+}
+
+.btn-dark:focus {
+    background-color: hsl(0, 0%, 15%) !important;
+    box-shadow: 0 2px 5px var(--light-shadow) !important;
+}
+
+.btn-link {
+    color: $header-text-color;
+    font-size: 2rem;
+    transition: backdrop-filter .2s, color .2s;
+}
+
+.btn-link:hover {
+    backdrop-filter: brightness(1.5) contrast(1.15) saturate(.9);
+    color: $subheader-text-color;
+    text-decoration: none;
+}
+
+.btn-link:focus {
+    box-shadow: none;
+    text-decoration: none;
+}
+
+.btn-small {
+    font-size: 1.5rem;
+}
+
+.icon-discord {
+    filter: drop-shadow(0 2px 5px var(--light-shadow));
+    height: 100%;
+    position: absolute;
+    top: 0; right: 0;
+}
+
+.icon-steam {
+    filter: drop-shadow(0 2px 5px var(--light-shadow));
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+}
+
+.img-btn {
+    border: none;
+    border-radius: 0;
+    background: var(--light-shadow);
+    /* filter: grayscale(1); */
+    height: 100%;
+    padding: .75rem .5rem;
+    transition: box-shadow .2s, transform .2s;
+    width: 100%;
+    box-shadow: 0 3px 5px var(--light-shadow);
+}
+
+.img-btn:hover {
+    box-shadow: 0 3px 5px var(--box-glow);
+    /* filter: grayscale(0); */
+    transform: scale(1.04) translateY(-1px);
+}
+
+.img-btn:focus {
+    outline: none;
+}
+
+/* Music Player */
+
+.music-player {
+    background: transparent;
+    border: none;
+    filter: brightness(.65);
+    height: 100%;
+    outline: none;
+    transition: background-color .2s, box-shadow .4s, filter .2s;
+}
+
+.music-player:hover {
+    filter: brightness(1);
+}
+
+.music-player:focus {
+    outline: none;
+}
+
+.play {
+    background-image: url("/assets/images/buttons/play.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 15px auto;
+    margin-right: 1px;
+    width: 24px;
+    height: 30px;
+}
+
+.pause {
+    background-image: url("/assets/images/buttons/pause.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 15px auto;
+    width: 25px;
+    height: 30px;
+}
+
+/* Navbar Buttons */
+
+.navbar-brand, .nav-link {
+    font-family: $header-font;
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    transition: background-color .2s, box-shadow .4s;
+}
+
+// .navbar-brand {
+//     filter: brightness(.6);
+// }
+
+// .navbar-brand:hover {
+//     filter: brightness(.8);
+// }
+
+.navbar-brand-logo {
+    height: 30px;
+}
+
+.nav-link {
+    border: 1px solid transparent;
+}
+
+.donate-button {
+    max-width: 300px;
+}
+
+.official-link {
+    background-color: hsl(0, 0%, 0%);
+    transition: background-color .4s;
+    width: 65px; height: auto;
+}
+
+/* Social Media Buttons */
+
+.steam {
+    background-color: hsl(222, 30%, 16%);
+}
+
+.steam:hover {
+    background-color: hsl(222, 30%, 12%);
+}
+
+.twitch {
+    background-color: hsl(261, 35%, 35%);
+}
+
+.twitch:hover {
+    background-color: hsl(261, 35%, 25%);
+}
+
+.twitter {
+    background-color: hsl(203, 50%, 25%);
+}
+
+.twitter:hover {
+    background-color: hsl(203, 50%, 15%);
+}
+
+.youtube {
+    background-color: hsl(0, 75%, 40%);
+}
+
+.youtube:hover {
+    background-color: hsl(0, 75%, 30%);
+}
+
+@media screen and (min-width: 576px) {
+    .nav-link:hover, .navbar-brand:hover, .music-player:hover {
+        background-color: var(--navlink-hover-color);
+        box-shadow: 0 3px $color-cobalt-light;
+    }
+}
