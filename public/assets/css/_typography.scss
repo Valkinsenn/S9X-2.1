@@ -18,7 +18,7 @@ Typography
 }
 
 body {
-    color: $body-text-color;
+    color: $body-text-color !important;
     font-family: $body-font;
     font-size: .9rem;
     text-shadow: 0 2px 5px black;
@@ -71,7 +71,7 @@ p {
 
 @media screen and (min-width: 576px) {
     body {
-        font-size: 1rem !important;
+        font-size: 1.05rem !important;
     }
 
     p {

@@ -3,6 +3,8 @@ import Navbar from './HeaderComponent';
 import Footer from './FooterComponent';
 import Home from './HomeComponent';
 import Team from './TeamComponent';
+import History from './HistoryComponent';
+import Join from  './JoinComponent';
 import { Switch, Route } from 'react-router-dom';
 
 class Main extends Component {
@@ -14,9 +16,9 @@ class Main extends Component {
                 <Switch>
                     <Route exact path="/" component={Home} />
                     <Route exact path="/team" component={Team} />
-                    <Route exact path="/history" component="History" />
+                    <Route exact path="/history" component={History} />
                     <Route exact path="/wiki" component="Wiki" />
-                    <Route exact path="/join" component="Join" />
+                    <Route exact path="/join" component={Join} />
                 </Switch>
                 <Footer />
             </div>

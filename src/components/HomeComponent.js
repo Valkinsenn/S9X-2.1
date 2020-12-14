@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { NavLink } from 'react-router-dom';
 
 function Home() {
@@ -25,6 +26,9 @@ function Home() {
     return (
 
     <div>
+        <Helmet>
+            <title>Squad 9 - Home</title>
+        </Helmet>
 
         {/* Main Carousel */}
         <div id="carouselExampleIndicators" className="carousel slide d-none d-md-block" data-ride="carousel">

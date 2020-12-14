@@ -1,8 +1,12 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 
 function Team() {
     return(
         <div>
+            <Helmet>
+                <title>Squad 9 - Team</title>
+            </Helmet>
 
             {/* Main Container */}
             <div class="container-fluid pt-5 pb-4">
